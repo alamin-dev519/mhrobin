@@ -5,7 +5,7 @@ body{
 }
 
 .nev_top{
-    margin-top: 5px;
+    margin-top: 1px;
     width: 100%;
     display: flex;
     border-bottom: solid 1px black;
@@ -16,17 +16,17 @@ body{
 }
 .about_right{
     width: 300px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     margin-right: 20px;
     display: flex;
     justify-content: space-between;
 }
 .location img{
-    width: 15px;
+    width: 12px;
     margin-right: 10px;
 }
 .about img{
-    width: 15px;
+    width: 12px;
     margin-right: 10px;
 }
 .about span{
@@ -37,7 +37,7 @@ body{
 }
 .login{
     margin-left: 20px;
-    padding: 2px 15px;
+    padding: 1px 15px;
     background-color: orangered;
     border-radius: 5px;
     color: white;
@@ -45,96 +45,88 @@ body{
 }
 /*Nav top css end*/
 
-
-
-header{
-    width:100%;
-    height: 80px;
+nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 99;
-    box-shadow: 0 0 10px #ece7e7;
-    background: white;
-}
-#chk1{
-    display: none;
-     
-     
-}
-i{
-    color: black;
-    cursor: pointer;
-}
-header .logo{
-    flex: 1;
-    color:#fff;
-     
-    margin-left: 50px;
-    text-transform: uppercase;
-    font-size: 15px;
-}
-header .search-box{
-    flex: 1;
+    width: 100%;
+    height: 70px;
     position: relative;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
 }
-.search-box input{
-    width:100%;
-    height: 40px;
-    border: none;
-    outline: none;
-    background:#f2f2f2;
-    border-radius: 10px;
-    color:orangered;
-    font-size: 16px;
-    padding-left: 5px;
-    padding-right: 40px;
-    text-align: center;
-     
+.logo{
+    margin-left: 5%;
+    margin-top: 7px;
+    
 }
- 
-.search-box button{
-    cursor: pointer;
-    width:40px;
-    height: 40px;
-    border-radius: 10px;
-    border:none;
-    position: absolute;
-    top:0;
-    right: 0;
-    transform: scale(0.9);
-    background: orangered;
-    color: #fff;
+.call-lv-cart{
+        margin-right:10%;
+        margin-top: 15px;
 }
-header ul {
-    flex:2;
-    margin-top: 17px;
-    display: flex;
-    justify-content: space-evenly;
-}
-header ul li{
-    list-style: none;
-}
-header ul li a{
-    text-decoration: none;
-    color:#141313;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 10px 15px;
-}
-header ul li a img{
-    width: 40px;
-    color: orangered;
 
+.call-lv-cart i{
+    font-size: 30px;
+    padding: 0 30px;
+    color: rgb(249, 86, 16);
 }
-header ul li a span{
-    margin-top: px;
+.call-lv-cart span{
+    margin-left: -30px;
 }
-header ul li a:hover{
-    border-bottom: 2px solid cadetblue;
-}
-header .menu{
-    font-size: 2.5em;
-    display: none;
-}
+/*Search box styling*/
+.search-container {
+    flex-grow: 0.1;
+    display: flex;
+    padding: 16px;
+  }
+
+  .search-container input[type="text"] {
+    width: 100%;
+    border: 1px solid orangered;
+    outline:none;
+    border-radius: 6px;
+  }
+
+  .search-container button {
+    padding: 8px 10px;
+    margin-left: -10px;
+    border: 1px solid orangered;
+    color: orange;
+    cursor: pointer;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+
+  /* after responsiv */
+  .mini-screen-icon i{
+    font-size: 22px;
+    margin-top: 20px;
+    margin-right: 30px;
+    color: orangered;
+  }
+  .mini-screen-icon i:hover{
+    color: rgb(175, 9, 9);
+    cursor: pointer;
+  }
+
+  /* logo and search bar section end */
+
+  .menu-row{
+    background: orangered;
+  }
+  .menu-row ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-row ul li{
+    list-style: none;
+    padding: 10px 0px;
+    
+  }
+  .menu-row ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  .menu-row ul li a:hover{
+
+    text-decoration: underline;
+  }
